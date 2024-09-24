@@ -8,10 +8,10 @@
     <title>Donate Bangladesh</title>
 </head>
 <body>
-    <header class="mb-10">
-        <div class="bg-gray-100 navbar bg-base-100 px-16">
-            <div class="navbar-start mt-4 items-center">
-              <a class="btn btn-sm bg-[#B4F461] px-6 text-base font-bold">Blog</a>
+    <header class="mb-10 sticky top-0 backdrop-blur-md">
+        <div class="bg-gray-100 navbar bg-base-100 px-16 pb-12 pt-4 items-center">
+            <div class="navbar-start">
+              <a href="blog.html" class="btn btn-md bg-[#B4F461] px-8 text-base font-bold">Blog</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="">
@@ -25,14 +25,14 @@
     <main class="">
         <section class="donate button mb-10">
             <div class="text-center space-x-2">
-                <button class="btn btn-sm bg-[#B4F461]">Donation</button>
-                <button class="btn btn-sm">History</button>
+                <button class="btn btn-sm lg:btn-md lg:px-8 font-bold bg-[#B4F461]">Donation</button>
+                <button class="btn btn-sm lg:btn-md lg:px-8 font-bold"><a href="history.html">History</a></button>
             </div>
         </section>
 
-        <section class="mx-20 space-y-8">
+        <section class="lg:mx-20 space-y-8 mb-20">
           <!-- 1st card -->
-            <div class="card card-side bg-base-100 px-4 shadow-xl p-4 grid grid-cols-1 lg:flex">
+            <div class="static card card-side bg-base-100 border px-4 shadow-xl  grid grid-cols-1 lg:flex">
                 <figure>
                   <img class="w-full"
                     src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/noakhali.png"
@@ -49,12 +49,30 @@
                   <p class="break-normal"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                   <div class="card-actions">
                     <input id="input-donation" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="donation-button" class="btn w-full font-bold bg-[#B4F461]">Donate Now</button>
+                    <!-- Modal-1 start-->
+                     <!-- Open the modal using ID.showModal() method -->
+                    <button id="donation-button" class="btn w-full font-bold bg-[#B4F461]" onclick="my_modal_1.showModal()">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal items-center">
+                     <div class="modal-box text-center">
+                      <h3 class="text-3xl font-bold">Congrates!</h3>
+                      <div class="flex justify-center my-4">
+                        <img  src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
+                      </div>
+                       <p class="py-4">You have Donated for Humankind <br> <strong>Successfully</strong> </p>
+                         <div class="modal-action justify-center">
+                                <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn w-full">Close confirmation</button>
+                          </form>
+                            </div>
+                              </div>
+                        </dialog>
+                    <!-- Modal-1 end-->
                   </div>
                 </div>
               </div>
               <!-- 2nd Card -->
-            <div class="card card-side bg-base-100 px-4 shadow-xl p-4 grid grid-cols-1 lg:flex">
+            <div class="static card card-side bg-base-100 border px-4 shadow-xl p-4 grid grid-cols-1 lg:flex">
                 <figure>
                   <img class="w-full"
                     src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/feni.png"
@@ -70,12 +88,30 @@
                   <p class="break-normal"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                   <div class="card-actions">
                     <input id="input-donation1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="donation-button1" class="btn w-full font-bold bg-[#B4F461]">Donate Now</button>
+                    <!-- Modal-1 start-->
+                     <!-- Open the modal using ID.showModal() method -->
+                     <button id="donation-button1" class="btn w-full font-bold bg-[#B4F461]" onclick="my_modal_2.showModal()">Donate Now</button>
+                     <dialog id="my_modal_2" class="modal items-center">
+                      <div class="modal-box text-center">
+                       <h3 class="text-3xl font-bold">Congrates!</h3>
+                       <div class="flex justify-center my-4">
+                         <img  src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
+                       </div>
+                        <p class="py-4">You have Donated for Humankind <br> <strong>Successfully</strong> </p>
+                          <div class="modal-action justify-center">
+                                 <form method="dialog">
+                         <!-- if there is a button in form, it will close the modal -->
+                           <button class="btn w-full">Close confirmation</button>
+                           </form>
+                             </div>
+                               </div>
+                         </dialog>
+                     <!-- Modal-1 end-->
                   </div>
                 </div>
               </div>
               <!-- 3rd Card -->
-            <div class="card card-side bg-base-100 px-4 shadow-xl p-4 grid grid-cols-1 lg:flex">
+            <div class="static card card-side bg-base-100 border px-4 shadow-xl p-4 grid grid-cols-1 lg:flex">
                 <figure>
                   <img class="w-full"
                     src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/quota-protest.png"
@@ -91,7 +127,25 @@
                   <p class="break-normal"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                   <div class="card-actions">
                     <input id="input-donation2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="donation-button2" class="btn w-full font-bold bg-[#B4F461]">Donate Now</button>
+                    <!-- Modal-1 start-->
+                     <!-- Open the modal using ID.showModal() method -->
+                     <button id="donation-button2" class="btn w-full font-bold bg-[#B4F461]" onclick="my_modal_3.showModal()">Donate Now</button>
+                     <dialog id="my_modal_3" class="modal items-center">
+                      <div class="modal-box text-center">
+                       <h3 class="text-3xl font-bold">Congrates!</h3>
+                       <div class="flex justify-center my-4">
+                         <img  src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
+                       </div>
+                        <p class="py-4">You have Donated for Humankind <br> <strong>Successfully</strong> </p>
+                          <div class="modal-action justify-center">
+                                 <form method="dialog">
+                         <!-- if there is a button in form, it will close the modal -->
+                           <button class="btn w-full">Close confirmation</button>
+                           </form>
+                             </div>
+                               </div>
+                         </dialog>
+                     <!-- Modal-1 end-->
                   </div>
                 </div>
               </div>
