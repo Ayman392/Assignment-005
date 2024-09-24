@@ -3,10 +3,10 @@ document.getElementById("donation-button")
     event.preventDefault();
 
     const addDonation = getInputFieldValueById('input-donation');
-    console.log('Donation amount : ',addDonation);
-
+    console.log('Donation amount : ',addDonation); 
+    
     const donation = getTextFieldValueById('donation-amount');
-
+    
     const newDonation = addDonation + donation ;
 
     document.getElementById('donation-amount').innerText = newDonation;
