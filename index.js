@@ -12,15 +12,6 @@ document.getElementById("donation-button")
     document.getElementById('donation-amount').innerText = newDonation;
     console.log(donation,addDonation);
 
-    if(addDonation > 0 || isNaN(newDonation)){
-        alert("Invalid Donation Amount");
-    } 
-
-    else if (newBalance < donation){
-        alert("insufficient balance");
-        return ;
-    }
-
     const remainingBalance = getTextFieldValueById('account-balance');
     const newBalance = remainingBalance - addDonation;
 
